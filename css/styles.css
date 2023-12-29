@@ -11082,13 +11082,17 @@ section.resume-section .resume-section-content {
 }
 
 .circle {
-  border-radius: 100%;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  backdrop-filter: invert(1);
-  margin-bottom: -300px;
-  background-color: #e4cca8;
+  border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+    width: 50%;
+    height: 500px;
+    /* background-color: #f7f3aa; */
+    position: absolute;
+    backdrop-filter: invert(1);
+    right: 0;
+    margin-bottom: -500px;
+    margin-left: 400px;
+    object-fit: cover;
 }
 
 .circle-type-2{
@@ -11151,15 +11155,17 @@ section.resume-section .resume-section-content {
   }
 
   .circle {
-    border-radius: 100%;
-    width: 800px;
+    border-top-left-radius: 500px;
+    border-bottom-left-radius: 500px;
+    width: 50%;
     height: 800px;
     /* background-color: #f7f3aa; */
     position: absolute;
     backdrop-filter: invert(1);
-    /* bottom: 0; */
+    right: 0;
     margin-bottom: -500px;
     margin-left: 400px;
+    object-fit: cover;
 }
   section.personal-section {
     margin-bottom: 180px;
@@ -11201,9 +11207,9 @@ section.resume-section .resume-section-content {
   }
 
   .circle {
-    border-radius: 100%;
-    width: 1100px;
-    height: 1100px;
+    /* border-radius: 100%; */
+    /* width: 1100px; */
+    /* height: 1100px; */
     position: absolute;
     backdrop-filter: invert(1);
     margin-bottom: -800px;
@@ -11446,7 +11452,7 @@ img {
   width: 100%;
 }
 
-/* Mobile Navigation Menu Effects */
+/* Mobile Navigation Menu Effects*/
 @media (max-width:991px) {
   .nav-link{
     color: black;
