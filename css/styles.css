@@ -11083,16 +11083,16 @@ section.resume-section .resume-section-content {
 
 .circle {
   border-top-left-radius: 500px;
-    border-bottom-left-radius: 500px;
-    width: 50%;
-    height: 500px;
-    /* background-color: #f7f3aa; */
-    position: absolute;
-    backdrop-filter: invert(1);
-    right: 0;
-    margin-bottom: -500px;
-    margin-left: 400px;
-    object-fit: cover;
+  border-bottom-left-radius: 500px;
+  width: 50%;
+  height: 500px;
+  background-color: #e4cca8;
+  position: absolute;
+  backdrop-filter: invert(1);
+  right: 0;
+  margin-bottom: -500px;
+  margin-left: 400px;
+  object-fit: cover;
 }
 
 .circle-type-2{
@@ -11159,7 +11159,7 @@ section.resume-section .resume-section-content {
     border-bottom-left-radius: 500px;
     width: 50%;
     height: 800px;
-    /* background-color: #f7f3aa; */
+    background-color: #e4cca8;
     position: absolute;
     backdrop-filter: invert(1);
     right: 0;
