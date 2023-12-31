@@ -11595,3 +11595,9 @@ img {
   color: #e4cca8;
   font-weight: 500;
  }
+
+ .back-toggler{
+    align-items: center;
+    color: black;
+    display:flex;
+ }
