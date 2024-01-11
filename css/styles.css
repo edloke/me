@@ -11601,3 +11601,170 @@ img {
     color: black;
     display:flex;
  }
+
+ .project-summary{
+  color: white;
+  font-size: 18px;
+ }
+
+
+ /*
+ Copyright (c) 2024 by KellyEx (https://codepen.io/kellyex/pen/JjoYpEx)
+*/
+
+ .cards {
+   font-size: 0;
+   white-space: nowrap;
+ }
+ 
+ .card-outter {
+   display: inline-block;
+   padding-left: 20px;
+ }
+ 
+ .card {
+   background: white;
+   width: 800px;
+   padding: 20px;
+   
+   .title {
+     font-size: 16px;
+     margin: 10px 0 6px;
+   }
+   
+   .description {
+     font-size: 12px;
+     margin: 0;
+   }
+ }
+ 
+ ol {
+	list-style: none;
+	padding: 0;
+}
+
+.slider-container {
+	position: relative;
+	overflow: hidden;
+	margin: 0 -20px;
+  border-radius: 6px;
+	
+/* 	
+	&:before,
+	&:after {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		content: "";
+		display: block;
+		width: 20px;
+		height: 100%;
+	}
+
+	&:before {
+		left: 0;
+		background: linear-gradient(90deg, #183053, transparent);
+	}
+
+	&:after {
+		right: 0;
+		background: linear-gradient(-90deg, #183053, transparent);
+	} */
+}
+
+.slider {
+	transition: transform .2s ease-out;
+	
+	&.active {
+		transition: none;
+		
+		&, & a {
+			cursor: grab;
+		}
+	
+		+ .slider-indicator-bar {
+
+			.slider-indicator {
+				transition: none; 
+			}
+		}
+	}
+}
+
+.slider-indicator-bar {
+	position: relative;
+	height: 5px;
+	width: 100px;
+	margin: 30px auto 0;
+	background: lighten(#222, 6);
+	border-radius: 2px;
+
+	.slider-indicator {
+		position: absolute;
+		left: 0;
+		content: "";
+		height: 6px;
+		background-color: lighten(#222, 18);;
+		border-radius: 2px;
+		transition: left .2s ease-in-out;
+	}
+}
+
+
+
+.slider-arrow {
+	display: block;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	width: 60px;
+	height: 60px;
+	background: #000000b0;
+  backdrop-filter: blur(1px);
+	/* border: 1px solid #888; */
+	border-radius: 50%;
+	cursor: pointer;
+	transform: translateY(-100%);
+	transition: opacity .2s ease-in-out;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.13), 0 5px 18px 0 rgba(0, 0, 0, 0.12);
+
+	&:hover {
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.13), 0 5px 18px 0 rgba(0, 0, 0, 0.12);
+	}
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: verdana;
+		font-size: 18px;
+		color: #888;
+	}
+
+	&.disabled {
+		opacity: 0;
+	}
+
+	&.left {
+		left: 5px;
+
+		&:before {
+			margin-left: -1px;
+			/* content: "\21F7"; */
+		}
+	}
+
+	&.right {
+		right: 5px;
+
+		&:before {
+			margin-left: 1px;
+			/* content: "\21F8"; */
+		}
+	}
+}
+
+.custom-mb-6{
+  margin-bottom: 100px;
+}
