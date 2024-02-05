@@ -11957,20 +11957,19 @@ img {
 }
 .portfolio-backdrop-text{
   color: #737373;
-  position: absolute;
-  z-index: -30;
+  position: relative;
+  /* z-index: -10; */
   margin-top: -50px;
   text-transform: unset;
   text-align: center;
   width: 100%;
-  margin-left: -40px;
   font-weight: 500;
 }
 
 .portfolio-backdrop-text-2{
   color: #A14400;
-  position: absolute;
-  z-index: -30;
+  position: relative;
+  /* z-index: -10; */
   margin-top: -55px;
   text-transform: unset;
   text-align: center;
@@ -11992,6 +11991,7 @@ img {
 .portfolio-numbers{
   height: 80px;
   width: fit-content;
+  aspect-ratio: 1/1;
   object-fit: contain;
   margin-left: 11%;
 }
@@ -11999,6 +11999,7 @@ img {
 .portfolio-numbers-2{
   height: 80px;
   width: fit-content;
+  aspect-ratio: 1/1;
   object-fit: contain;
   margin-left: -20px;
 }
@@ -12007,6 +12008,7 @@ img {
   .portfolio-numbers-2{
     height: 80px;
     width: fit-content;
+    aspect-ratio: 1/1;
     object-fit: contain;
     margin-left: 5%;
   }
@@ -12053,11 +12055,16 @@ img {
   }
 }
 
+.portfolio-img-display-1{
+  position: relative;
+  z-index: 2;
+}
 .portfolio-img-display{
   aspect-ratio: 1/1;
   object-fit: cover;
   width: 100%;
-  
+  position: relative;
+  z-index: 2;
 }
 
 .portfolio-img-display-frame{
