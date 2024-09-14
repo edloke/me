@@ -616,9 +616,14 @@ img.portfolio-banner {
 .typo-font{
   padding-top: 24px; padding-left: 48px;
  }
+
+ .content-hero{
+  width:756px; overflow: hidden;
+ }
 @media (max-width: 991px){
   .overflow-mobile{
     overflow-x: hidden;
+    position: relative;
   }
   
   
@@ -665,10 +670,13 @@ img.portfolio-banner {
     display: unset;
   }
   .main-text{
-    margin-left: 175px; 
-    width: 390px;
+    margin-left: 40px; 
+    width: 100%;
   }
 
+  .content-hero{
+    width:100%; overflow: hidden;
+  }
   .width-490{
     width: 390px;
   }
