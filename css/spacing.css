@@ -1,0 +1,136 @@
+/*Gap, Padding and Margin Styling*/
+
+/*  Gaps Override 80px  */
+.gap-80{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.gap-12{
+  gap: 12px;
+}
+
+/*  Gaps Override 40px  */
+.gap-40{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/*  Gaps Override 16px  */
+.gap-16{
+  gap: 16px;
+}
+
+.gap-28{
+  display: flex;
+  flex-direction: column;
+  gap: 28px !important;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+}
+
+.mb-20{
+  margin-top: 20px;
+}
+
+/*  Paddings Override 0  */
+.padding-bottom-0{
+  padding-bottom: 0;
+}
+.padding-left-0{
+  padding-left: 0;
+}
+.padding-top-0{
+  padding-top: 0;
+}
+.padding-right-0{
+  padding-right: 0;
+}
+
+.padding-bottom-40{
+  padding-bottom: 40px;
+}
+
+@media (min-width: 992px){
+  /*  Paddings Override 20px  */
+  .padding-left-20{
+    padding-left: 20px;
+  }
+  .padding-right-20{
+    padding-right: 20px;
+  }
+}
+
+/*  Margin Override 0  */
+.margin-bottom-0{
+  margin-bottom: 0;
+}
+
+
+.ep-pos{
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+
+.mdp-pos{
+  margin-top: 33rem;
+  margin-left: 0rem;
+}
+
+.ps-pos{
+  margin-top: 15rem;
+}
+
+.d-pos{
+  margin-top: 38rem;
+  margin-right: 2rem;
+}
+
+.vs-pos{
+  margin-top: 10rem;
+  margin-right: 1rem;
+}
+
+.m-pos{
+  margin-top: 30rem;
+  margin-right: 0rem;
+}
+
+
+/* Mobile View */
+@media (min-width: 992px){
+  .ep-pos{
+    margin-top: 4rem;
+    margin-left: 8rem;
+  }
+  
+  .mdp-pos{
+    margin-top: 43rem;
+    margin-left: 4rem;
+  }
+  
+  .ps-pos{
+    margin-top: 12rem;
+  }
+  
+  .d-pos{
+    margin-top: 45rem;
+    margin-right: 6rem;
+  }
+  
+  .vs-pos{
+    margin-top: 4rem;
+    margin-right: 2rem; 
+  }
+  
+  .m-pos{
+    margin-top: 36rem;
+    margin-right: 4rem;
+  }
+}
+
+
