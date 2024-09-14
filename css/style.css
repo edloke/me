@@ -670,7 +670,8 @@ img.portfolio-banner {
     display: unset;
   }
   .main-text{
-    margin-left: 40px; 
+    margin-left: 0px; 
+    padding-left: 40px;
     width: 100%;
   }
 
