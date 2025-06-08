@@ -1,0 +1,183 @@
+
+/*Typography Styling*/
+
+.cormorant-xl {
+    color: #788583;
+    text-align: center;
+    text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    font-family: "Cormorant Unicase";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2.12px;
+}
+
+.cormorant-l{
+    color: #788583;
+    text-align: center;
+    text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    font-family: "Cormorant Unicase";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.28px;
+}
+
+.cormorant-m{
+    color: #788583;
+    text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    font-family: "Cormorant Unicase";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.28px;
+}
+
+.archivo-l{
+    color: rgba(68, 68, 68, 0.64);
+    text-align: center;
+    font-family: Archivo;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.64px;
+}
+
+.archivo-p-m{
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.64);
+    text-overflow: ellipsis;
+    font-family: Archivo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+.font-weight-normal{
+    font-weight: 400;
+}
+
+.archivo-p {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    color: #363636;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: -0.08px;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+.color-olive{
+    color: #788583;
+}
+
+.color-grey{
+    color: #6E6E6E;
+}
+
+.btn-hyperlink{
+    color: #4C6561;
+    text-decoration: underline;
+    display: flex; 
+    align-items: center; 
+    gap: 4px;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.text-align-left{
+    text-align: left;
+}
+
+
+@media (min-width: 540px){
+    .cormorant-xl {
+        color: #788583;
+        text-align: center;
+        text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+        font-family: "Cormorant Unicase";
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -2.12px;
+    }
+    .archivo-l{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 56px; /* 121.429% */
+        letter-spacing: -1.12px;
+    }
+}
+
+@media (min-width:992px){
+    .cormorant-xl {
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 128px; /* 100% */
+        letter-spacing: -4px;
+    }
+
+    .archivo-l{
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 56px; /* 121.429% */
+        letter-spacing: -1.12px;
+    }
+}
+
+@media (min-width:1140px){
+    .cormorant-xl {
+        font-size: 200px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200px; /* 100% */
+        letter-spacing: -4px;
+    }
+    .cormorant-l{
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -1.44px;
+    }
+    .cormorant-m{
+        font-size: 56px;
+    }
+    .archivo-l{
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 68px; /* 121.429% */
+        letter-spacing: -1.12px;
+    }
+}
+
+.project-title{
+    font-size: 21px;
+    color: #4C6561 !important;
+}
+
+.lhistoire-font{
+    font-family: "Inria Serif";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

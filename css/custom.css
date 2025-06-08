@@ -1,0 +1,665 @@
+.background--custom {
+    background: linear-gradient(90deg, #eff6f6, #E1ECE2, #FAF8EB);
+    background-size: 300% 300%;
+    animation: gradient 7s alternate infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index:-1000;
+}
+
+    @keyframes gradient {
+    0% {
+    background-position: 0%;
+    }
+    100% {
+    background-position: 100%;
+    }
+}
+
+.initial-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    height: calc(80vh - 88px);
+    justify-content: center;
+}
+
+@media (min-width:992px){
+    .initial-name{
+        gap: 8px;
+    }
+}
+.initial-name-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    height: 20vh;
+    justify-content: center;
+}
+
+.title-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 80px 0;
+    justify-content: center;
+    align-self: stretch;
+}
+
+.initial-desc{
+    width:100%;
+    max-width: 538px;
+}
+
+
+.navbar-custom{
+    display: flex;
+    padding: 8px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.40);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(16px);
+}
+
+.nav-link{
+    display: flex;
+    padding: 8px 24px !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.navbar-nav .nav-link.active {
+    background: #FFF;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+.project-card{
+    display: flex;
+    padding: 8px 8px 24px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.56);
+    box-shadow: 2px 2px 24px 0px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(16px);
+}
+
+.project-card:hover{
+    transition: 0.3s all;
+    transform: scale(1.02);
+}
+
+.project-img{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+.project-info{
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.project-desc{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    gap: 8px;
+}
+
+.override-underline {
+    text-decoration: none;
+}
+
+.about-intro{
+    display: flex;
+    padding: 96px 0px;
+    align-items: flex-start;
+    gap: 96px;
+    align-self: stretch;
+}
+
+.about-intro-override{
+    max-width: 900px;
+    flex: 1 0 0;
+    text-align: left !important;
+}
+
+.about-desc {
+    display: flex;
+    padding: 48px 0px;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+    flex-direction: column;
+}
+
+.about-desc-img{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 24px;
+    background: url(<path-to-image>) lightgray -165.502px -167.617px / 184.369% 245.826% no-repeat;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+.about-desc-override{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+    max-width: 553px;
+}
+
+.about-reverse{
+    flex-direction: column-reverse;
+    align-items:flex-end;
+
+}
+
+.navbar-mobile{
+    visibility: hidden;
+}
+
+.divider-block{
+    visibility: hidden;
+}
+
+@media (min-width: 992px){
+    .about-desc{
+        flex-direction: unset;
+    }
+    .about-desc-img{
+        width: 369px;
+        height: 369px;
+    }
+    .navbar-mobile{
+        visibility: unset;
+    }
+    .about-reverse{
+        flex-direction: unset;
+    }
+ 
+}
+
+@media (min-width: 1140px){
+    .divider-block{
+        width: 294px;
+        height: 154px;
+        visibility: unset;
+    }
+    .about-intro-override{
+        max-width: 900px;
+        font-size: 64px !important;
+        flex: 1 0 0;
+        text-align: left !important;
+    }
+}
+
+.col-stack{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+}
+
+
+.footer{
+    display: flex;
+    padding-top: 96px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.copyright-section{
+    display: flex;
+    padding: 96px 0px 24px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.social-links{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+@media(min-width: 540px){
+    .social-links{
+        gap: 32px;
+    }
+}
+
+.break-word{
+    word-break: break-word;
+}
+.btn-social{
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+.btn-social:hover{
+    background-color: white;
+    transition: 0.3s all;
+    transform: scale(1.08);
+}
+
+/* Project Details */
+
+.case-study{
+    border-radius: 24px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.case-study-img{
+    width: 100%;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    margin-bottom: 16px;
+    flex-direction: column;
+    gap: 56px;
+}
+  
+.project-banner{
+    border-radius: 24px;
+    background: radial-gradient(145.29% 113.39% at 9.29% 9.19%, #5694A9 0%, #223B43 100%);  
+    aspect-ratio: 1/1;
+    align-self: stretch;
+    overflow: hidden;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 8%;
+    align-items: center;
+}
+
+.project-banner-lhistoire{
+    border-radius: 24px;
+    background: radial-gradient(145.29% 113.39% at 9.29% 9.19%, #5694A9 0%, #223B43 100%);
+    aspect-ratio: 1/1;
+    align-self: stretch;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    padding-right: unset;
+    align-items: center;
+}
+
+.project-banner-img-lhistoire {
+    width: 120%;
+    margin-top: 32%;
+}
+
+.width-responsive{
+    width: 180%;
+}
+@media (min-width: 992px){
+    .project-banner-img-lhistoire {
+        width: 56%;
+        margin-top: 16%;
+    }
+    .width-responsive{
+        width: 100%;
+    }
+}
+
+
+.project-banner-img{
+    width: 152%; 
+    margin-top: 48%;
+}
+
+@media (min-width: 992px) {
+    .project-banner{
+        justify-content: center;
+        padding-right: unset;
+        height: 467.743px;
+        aspect-ratio: unset;
+    }
+
+    .project-banner-img{
+        width: 70%; 
+        margin-top: 32%;
+    }
+    
+}
+.detail-summary{
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.detail-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+    margin-top: 96px;
+}
+
+.detail-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.detail-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.CTA-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.mockup-link-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 56px;
+    width: 100%;
+}
+
+.detail-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.button-reverse{
+    flex-direction: row-reverse;
+}
+
+.link-row-reverse{
+    flex-direction: row-reverse !important;
+}
+
+.feature-container-mobile{
+    gap: 40px !important;
+}
+
+.feature-container{
+    display: flex;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.feature-container-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+}
+
+@media (min-width: 992px){
+    .feature-container{
+        padding: 40px 0px;
+    }
+
+    .feature-container-row{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 64px;
+        align-self: stretch;
+    }
+
+    .feature-container-mobile{
+        gap: 64px !important;
+    }
+
+}
+
+
+
+.feature-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.feature-desc-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.feature-title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+.feature-img{
+    width: 100%;
+}
+
+.feature-card-img-1-1{
+    aspect-ratio: 1/1 !important;
+}
+
+.feature-card-img-override-1{
+    min-width: 40%;
+    max-width: 440px;
+    padding: 16px !important;
+}
+
+.feature-container-end{
+    max-width: 720px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 48px 0;
+}
+.feature-img-override-2{
+    width: 96%;
+
+}
+
+.width-128{
+    width: 128%;
+}
+
+.feature-card-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    aspect-ratio: 4/3;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(16px);
+    overflow: hidden;
+    padding: 0px 24px;
+}
+
+@media (min-width: 448px){
+    .mockup-link-container{
+        flex-direction: row;
+        gap: 40px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px){
+    .detail-link{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+        flex-direction: row;
+    }
+
+    .button-reverse{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1440px){
+    .link-row-reverse{
+        flex-direction: row !important;
+    }
+    .project-container{
+        align-items: flex-end;
+        align-self: stretch;
+        flex-direction: row;
+        gap: 128px;
+        margin-bottom: 40px;
+    }
+}
+
+
+/*
+Copyright (c) 2025 by mochi resources (https://codepen.io/mochi-resources/pen/LYQPZqM)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*/
+.disk {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+    
+.disk {
+        animation-name: spin;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes spin {
+        from { transform: rotate(0deg) }
+        to { transform: rotate(360deg) }
+}
+@media (min-width: 992px){
+    .disk {
+        max-width: 480px;
+        max-height: 480px;
+    }
+}
+
+
+
+
+/*
+Copyright (c) 2025 by Philipp Ostermann (https://codepen.io/lloopp/pen/XWJKMNr)
+Fork of an original work Animated scroll arrow bouncing (https://codepen.io/Illustrova/pen/BwEGrm
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*/
+
+  .arrow-container {
+    width: 20px;
+    /* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    cursor: pointer;
+    height: 15px;
+  }
+  
+  .arrow-down {
+    height: 4px;
+    background: #788583;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    border-radius: 6px;
+  }
+
+  .arrow-down:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 100%;
+    border-radius: 5px;
+    background: #788583;
+    transform: rotate(-90deg);
+    transform-origin: 0% 100%;
+  }
+  
+  @keyframes bounce {
+  50% {
+      transform: translateY(-15px);
+    }
+  }
