@@ -33,13 +33,14 @@
         gap: 8px;
     }
 }
+
 .initial-name-2{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
     height: 20vh;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .title-section{
@@ -329,19 +330,63 @@
     margin-top: 32%;
 }
 
+.project-banner-img-spo{
+    width: 168%;
+    margin-top: 48%;
+}
+
+.project-banner-spo{
+    justify-content: flex-start;
+    padding-right: unset;
+    padding-left: 8%;
+}
+
 .width-responsive{
     width: 180%;
 }
+
+.feature-branding{
+    aspect-ratio: unset !important;
+    padding: 40px 24px !important;
+}
+
+.branding-desc{
+    display: flex;
+    padding: 40px 0px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;    
+}
+
+
+
 @media (min-width: 992px){
     .project-banner-img-lhistoire {
         width: 56%;
         margin-top: 16%;
     }
+
+    .project-banner-spo{
+        padding-left: unset;
+    }
+
+    .project-banner-img-spo{
+        align-items: center;
+        width: 80%;
+        margin-top: 32%;
+    }
+
+    .feature-branding{
+        padding: 32px !important;
+    }
+
     .width-responsive{
         width: 100%;
     }
-}
 
+
+}
 
 .project-banner-img{
     width: 152%; 
@@ -449,6 +494,17 @@
     align-self: stretch;
 }
 
+.feature-img-footer{
+    width: 200%; 
+    margin-bottom: 16%;
+}
+
+.feature-card-footer{
+    padding: 8px !important; 
+    aspect-ratio: 1/1 !important; 
+
+}
+
 @media (min-width: 992px){
     .feature-container{
         padding: 40px 0px;
@@ -464,6 +520,17 @@
 
     .feature-container-mobile{
         gap: 64px !important;
+    }
+
+    .feature-img-footer{
+        width: 96%; 
+        margin-bottom: 16%;
+    }
+
+    .feature-card-footer{
+        padding: 8px !important; 
+        aspect-ratio: unset !important; 
+        height: 540px !important;
     }
 
 }
@@ -517,6 +584,7 @@
     gap: 8px;
     margin: 48px 0;
 }
+
 .feature-img-override-2{
     width: 96%;
 
@@ -540,6 +608,7 @@
     overflow: hidden;
     padding: 0px 24px;
 }
+
 
 @media (min-width: 448px){
     .mockup-link-container{

@@ -103,13 +103,13 @@
 }
 
 
-@media (min-width: 540px){
+@media (min-width: 430px){
     .cormorant-xl {
         color: #788583;
         text-align: center;
         text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
         font-family: "Cormorant Unicase";
-        font-size: 96px;
+        font-size: 100px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
