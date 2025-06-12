@@ -169,7 +169,7 @@
 
 .background--custom {
     background-image: url(../assets/img/bg.jpg);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
