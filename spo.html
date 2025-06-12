@@ -26,6 +26,7 @@
   <link href="css/custom.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/font.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
 
 </head>
 
@@ -82,16 +83,15 @@
           <h1 class="cormorant-l text-align-left">SPO</h1>
         </div>
         <p class="archivo-p">In this project, we aim to build a website for an insurance client that showcases their
-          services, features their team, and communicates their mission and values—all to enhance visibility and attract
+          services, features their team, and communicates their mission and values, all to enhance visibility and
+          attract
           a larger customer base.</p>
       </div>
-      <div class="mockup-link-container link-row-reverse">
+      <div class="mockup-link-container">
         <div class="CTA-container">
-        </div>
-        <div class="CTA-container">
-          <!-- CTA - Hi-Fi Prototype -->
           <p class="archivo-p-m color-grey font-weight-normal">Hi-Fi Prototype</p>
-          <a class="archivo-p-m btn-hyperlink"
+          <!-- CTA - HiFi -->
+          <a class="archivo-p-m btn-hyperlink" style="display: flex; align-items: center; gap: 4px;"
             href="https://www.figma.com/proto/oOO6vOuurGxJxeyD7DEyFB/SPO?page-id=0%3A1&node-id=605-1310&viewport=-347%2C152%2C0.18&t=LdLQkvWqlLPWzmms-1&scaling=min-zoom&content-scaling=fixed"
             target="_blank">
             Link
@@ -99,11 +99,23 @@
               arrow_outward
             </span>
           </a>
+        </div>
 
+        <div class="CTA-container">
+          <p class="archivo-p-m color-grey font-weight-normal">Website URL</p>
+          <!-- CTA - HiFi -->
+          <a class="archivo-p-m btn-hyperlink" style="display: flex; align-items: center; gap: 4px;"
+            href="https://www.spo-pfa.com/" target="_blank">
+            Link
+            <span class="material-symbols-outlined">
+              arrow_outward
+            </span>
+          </a>
         </div>
 
       </div>
     </div>
+
 
     <!-- Project Banner -->
     <div class="project-banner project-banner-spo mb-40"
@@ -114,88 +126,201 @@
     <!-- Project Branding -->
     <div class="feature-container">
       <h1 class="cormorant-m">Branding</h1>
-      <div class="feature-card-img feature-branding">
-        <div class="row gx-5 gy-5" style="align-items: center !important;">
-          <div class="col-xl-8">
-            <img src="assets/projects/spo/spo-colour.png" alt="spo-colour" class="feature-img">
+      <div class="feature-container-row">
+
+        <div class="feature-card">
+          <div class="feature-card-img">
+            <img src="assets/projects/spo/spo-colour.png" alt="color-branding" class="feature-img">
           </div>
-          <div class="col-xl-4">
-            <img src="assets/projects/spo/spo-typography.png" alt="spo-colour" class="feature-img">
+          <div class="feature-desc-container">
+            <h2 class="archivo-p-m project-title">Colour Scheme</h1>
+              <p class="archivo-p">Building on the client's brand identity, accent colors that enhance warmth and
+                approachability while maintaining a professional aesthetic are incorporated.</p>
           </div>
         </div>
-
-      </div>
-      <div class="branding-desc">
-        <p class="archivo-p" style="max-width: 720px;">Building on the client’s branding, I extended the color palette
-          with two nuanced reds for visual richness and a muted grey to convey professionalism. Inter’s minimalist
-          typography was selected to amplify the design’s polished tone.</p>
+        <div class="feature-card">
+          <div class="feature-card-img">
+            <img src="assets/projects/spo/spo-typography.png" alt="typography" class="feature-img"
+              style="width: 88% !important;">
+          </div>
+          <div class="feature-desc-container">
+            <h2 class="archivo-p-m project-title">Typography</h1>
+              <p class="archivo-p">The Inter typeface elevates the design with its clean geometry, balancing
+                professional clarity with approachable readability.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-img" style="padding: 0px !important; justify-content: flex-end !important;">
+            <img src="assets/projects/spo/spo-components.png" alt="components" class="feature-img">
+          </div>
+          <div class="feature-desc-container">
+            <h2 class="archivo-p-m project-title">Components</h1>
+              <p class="archivo-p">Rounded elements are incorporated throughout the interface to create a more welcoming
+                user experience and achieve a modern, friendly aesthetic.</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Project Design -->
-    <div class="feature-container" style="margin-top: 40px !important;">
-      <div class="feature-title-container">
+    <div class="feature-container feature-mockup-container">
+      <div class="feature-title-container feature-mockup-banner">
         <h1 class="cormorant-m">About The Design</h1>
-        <p class="archivo-p" style="margin-bottom: 16px; max-width: 720px;">This design creates a warm and inviting
-          digital space to enhance visitor engagement, using rounded shapes and soft edges to evoke a friendly,
-          approachable aesthetic. The intuitive layout ensures effortless navigation, making the browsing experience
-          both enjoyable and memorable for users exploring the site.
+        <p class="archivo-p">This design creates a warm and inviting digital space to enhance visitor engagement, using
+          rounded shapes and soft edges to evoke a friendly, approachable aesthetic. The intuitive layout ensures
+          effortless navigation, making the browsing experience both enjoyable and memorable for users exploring the
+          site.
           <br><br>
           To further optimize engagement, strategically placed quick-action cards at the end of each page guide visitors
           toward relevant content, encouraging deeper exploration. This thoughtful approach not only improves user
           interaction but also helps increasing the overall visibility of the other pages.
         </p>
       </div>
+      <div class="feature-card-img feature-card-banner">
+        <img src="assets/projects/spo/spo-featured-img.png" alt="spo-featured" class="feature-img-l">
+      </div>
 
-      <div class="row gx-5 gy-5">
-        <div class="col-xl-6">
-          <div class="feature-card-img"
-            style="padding: 8px !important; aspect-ratio: unset !important; height: 100%; justify-content: flex-end;">
-            <img src="assets/projects/spo/spo-about.png" alt="spo-about-page" class="feature-img"
-              style=" width: 88%; margin-top: 8%; box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.05);">
-          </div>
-        </div>
-        <div class="col-xl-6" style="gap: 3rem; display: flex; flex-direction: column;">
-          <div class="feature-card-img" style="padding: 0px !important;  height: 100%; justify-content: flex-start;">
-            <img src="assets/projects/spo/spo-mobile.png" alt="persona-thomas" class="feature-img"
-              style="width: 80% !important; margin-top: -32%">
-          </div>
-          <div class="feature-card-img" style="padding: 0px !important; height: 100%; justify-content: flex-end;">
-            <img src="assets/projects/spo/spo-desktop.png" alt="persona-thomas" class="feature-img"
-              style="width: 100%;">
-          </div>
-        </div>
+    </div>
+    </div>
+  </section>
+  <div style="overflow:hidden; margin-top: 152px;">
+    <div class="container">
+      <h1 class="cormorant-m" style="margin-bottom: 48px;">Design Showcase</h1>
+    </div>
+    <section class="container" id="horizontal-scoll">
 
+      <div class="horizontal-scoll-wrapper">
+        <div class="horizontal">
+          <div>
+            <div class="feature-card-img-l ">
+              <div class="width-100">
+                <p class="archivo-p feature-card-p"><b>Home Page</b> —— Featuring an immersive video hero banner
+                  instantly engages visitors, showcasing our commitment to health and safety through compelling visuals.
+                </p>
+              </div>
+              <img src="assets/projects/spo/spo-home.png" alt="spo-home" style="width: 112%; margin-right: 16%;">
+            </div>
+          </div>
+          <div>
+            <div class="feature-card-img-l">
+              <div class="width-100">
+                <p class="archivo-p feature-card-p"><b>Join The Team Page</b> —— Combines tag-based browsing with
+                  aspirational journey visuals to balance immediate roles with long-term growth potential.</p>
+              </div>
+              <img src="assets/projects/spo/spo-join-the-team.png" alt="spo-join-the-team" style="width: 106%;">
+            </div>
+          </div>
+          <div>
+            <div class="feature-card-img-m">
+              <div class="width-100">
+                <p class="archivo-p feature-card-p"><b>Quick Access</b> —— Featuring quick access to recommended pages,
+                  the design creates a more engaging and interactive experience by guiding users to relevant content
+                  effortlessly.</p>
+              </div>
+              <img src="assets/projects/spo/spo-quick-access.png" alt="spo-quick-access" style="width: 112%; margin-left: 24%;">
+
+            </div>
+          </div>
+          <div>
+            <div class="feature-card-img-l">
+              <div class="width-100">
+                <p class="archivo-p feature-card-p"><b>Mobile Page</b> —— Explore responsive designs maintain brand
+                  consistency across devices, with touch-friendly adaptations of desktop layouts for seamless
+                  cross-platform experiences.</p>
+              </div>
+              <img src="assets/projects/spo/spo-mobile-mockups.png" alt="spo-mobile-mockups" style="width: 128%;">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <section class="container detail-container" style="overflow: hidden;">
+    <!-- Project Explorations -->
+    <div class="feature-container">
+      <h1 class="cormorant-m">Explorations</h1>
+      <div class="feature-container-row">
+
+        <div class="feature-card">
+          <div class="feature-card-img" style="justify-content: flex-start !important; padding: 0px !important;">
+            <img src="assets/projects/spo/spo-mockup-desktop.png" alt="mockup-desktop" class="feature-img"
+              style="width: 88%; margin-top: 24px;">
+          </div>
+          <div class="feature-desc-container">
+            <h2 class="archivo-p-m project-title">Desktop Experience</h1>
+              <p class="archivo-p">Experience the full desktop mockup designs with intentional choices for visual
+                harmony.</p>
+          </div>
+          <!-- CTA - HiFi -->
+          <a class="archivo-p-m btn-hyperlink"
+            href="https://www.figma.com/proto/oOO6vOuurGxJxeyD7DEyFB/SPO?page-id=0%3A1&node-id=605-1310&viewport=-347%2C152%2C0.18&t=LdLQkvWqlLPWzmms-1&scaling=min-zoom&content-scaling=fixed"
+            target="_blank">
+            View Desktop (Mockup)
+            <span class="material-symbols-outlined">
+              arrow_outward
+            </span>
+          </a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-img" style="justify-content: flex-end !important; padding: 0px !important;">
+            <img src="assets/projects/spo/spo-mockup-mobile.png" alt="mockup-mobile" class="feature-img"
+              style="width: 88% !important; margin-bottom: -40px;">
+          </div>
+          <div class="feature-desc-container">
+            <h2 class="archivo-p-m project-title">Mobile Experience</h1>
+              <p class="archivo-p">Experience the full mobile mockup designs with stacked layouts, touch targets, and
+                adaptive designs.</p>
+          </div>
+          <!-- CTA - HiFi -->
+          <a class="archivo-p-m btn-hyperlink"
+            href="https://www.figma.com/proto/oOO6vOuurGxJxeyD7DEyFB/SPO?page-id=0%3A1&node-id=605-1310&viewport=-347%2C152%2C0.18&t=LdLQkvWqlLPWzmms-1&scaling=min-zoom&content-scaling=fixed"
+            target="_blank">
+            View Mobile (Mockup)
+            <span class="material-symbols-outlined">
+              arrow_outward
+            </span>
+          </a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-img" style="justify-content: flex-start !important; padding: 0px !important;">
+            <img src="assets/projects/spo/spo-live-desktop.png" alt="live-site" class="feature-img"
+              style="width: 88%; margin-top: 24px;">
+          </div>
+          <div class="feature-desc-container">
+            <h2 class="archivo-p-m project-title">Live Site</h1>
+              <p class="archivo-p">Experience the live website in action, showcasing its real-world functionality and
+                flow.</p>
+          </div>
+          <!-- CTA - HiFi -->
+          <a class="archivo-p-m btn-hyperlink" href="https://www.spo-pfa.com" target="_blank">
+            View Developed Site
+            <span class="material-symbols-outlined">
+              arrow_outward
+            </span>
+          </a>
+        </div>
       </div>
     </div>
-    <!-- Design Consideration: My Account -->
+
+    <!-- Going Forward -->
     <div class="feature-container-end">
       <h1 class="cormorant-m">Going Forward</h1>
       <p class="archivo-p text-align-center" style="margin-bottom: 32px;">
         This project taught me the critical role of accessibility and how design choices impact user experience. If I
         could revisit one thing, I’d redesign the contact page to prevent the image from being stretched when the form
         expands opting for a layout that maintains visual integrity.
-        <br><br>
-        But enough theory – want to see it in action? Explore the mockups now!
       </p>
-      <!-- CTA - HiFi -->
-      <a class="archivo-p-m btn-hyperlink"
-        href="https://www.figma.com/proto/oOO6vOuurGxJxeyD7DEyFB/SPO?page-id=0%3A1&node-id=605-1310&viewport=-347%2C152%2C0.18&t=LdLQkvWqlLPWzmms-1&scaling=min-zoom&content-scaling=fixed"
-        target="_blank">
-        View Hi-Fi Prototype
-        <span class="material-symbols-outlined">
-          arrow_outward
-        </span>
-      </a>
-    </div>
-    <div class="feature-card-img feature-card-footer">
-      <img src="assets/projects/spo/spo-footer.png" alt="spo-about-page" class="feature-img-footer">
+
     </div>
 
     <!-- Page Link -->
     <div class="detail-link">
       <!-- CTA - Previous -->
-      <!-- <a class="archivo-p-m btn-hyperlink" href="spo.html">
+      <a class="archivo-p-m btn-hyperlink" href="bash.html">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <mask id="mask0_32_469" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
             <rect width="24" height="24" fill="#D9D9D9" />
@@ -206,11 +331,11 @@
               fill="#4C6561" />
           </g>
         </svg>
-        SPO
-      </a> -->
+        Bash
+      </a>
       <div></div>
       <!-- CTA - Next -->
-      <a class="archivo-p-m btn-hyperlink button-reverse" href="lhistoire.html">
+      <a class="archivo-p-m btn-hyperlink link-icon-swap" href="lhistoire.html">
         L'Histoire
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <mask id="mask0_32_475" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -227,9 +352,7 @@
 
   </section>
   <div class="footer">
-    <div class="title-section" style="padding-bottom:0;">
-      <h1 class="cormorant-l color-olive mb-0">Let's Connect.</h1>
-    </div>
+    <h1 class="cormorant-l color-olive mb-0">Let's Connect.</h1>
     <div class="social-links">
       <!-- Button - LinkedIn -->
       <a class="btn-social" href="https://www.linkedin.com/in/edloke" target="_blank">
@@ -275,7 +398,7 @@
         </svg>
       </a>
       <!-- Button - Resume -->
-      <a class="btn-social" href="assets/Edmund Loke - Resume.pdf" target="_blank">
+      <a class="btn-social" href="assets/Resume.pdf" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
           <mask id="mask0_99_349" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
             <rect width="32" height="32" fill="#D9D9D9" />
@@ -288,8 +411,9 @@
         </svg>
       </a>
     </div>
-    <div class="container copyright-section" style="align-items: center;">
+    <div class="container copyright-section">
       <p class="archivo-p">2025 Designed By Edmund Loke</p>
+      <a class="archivo-p btn-hyperlink" href="credits.html">Credits</a>
     </div>
   </div>
 
@@ -302,6 +426,8 @@
 <!-- SimpleLightbox plugin JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js'></script>
 
-</html>
+<script src="js/scripts.js"></script>
+<script src="js/carousel.js"></script>

@@ -1,0 +1,60 @@
+/* demo */
+
+/* * {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+} */
+/* horizontal scroll */
+
+#horizontal-scoll {
+  padding: 200px 0;
+  height: 3600px !important;
+  max-height: 3600px !important; /*3925px*/
+  margin: auto !important;
+  padding: 0 32px !important;
+  /* overflow: hidden; */
+}
+
+/* @media screen and (max-width: 992px){
+  #horizontal-scoll {
+  overflow: hidden;
+  margin: 0 !important;
+  width: 100%;
+  max-width: 100%;
+  }
+} */
+.horizontal-scoll-wrapper {
+  /* overflow: hidden; */
+  height: 525px;
+}
+
+.horizontal {
+  display: flex;
+  height: 100%;
+}
+
+.horizontal > div {
+  display: flex;
+  flex-shrink: 0;
+  padding: 0 32px;
+}
+
+.horizontal > div:first-child {
+  padding: 0 32px 0 0px;
+}
+
+.horizontal > div:last-child {
+  padding: 0 0px 0 32px;
+}
+
+.horizontal .card {
+  align-items: stretch;
+  width: 540px;
+  padding: 50px 40px;
+  background: #6e4ce1;
+  border-radius: 38px;
+  color: #f6f2e8;
+}
