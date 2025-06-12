@@ -169,7 +169,7 @@
 
 .background--custom {
     background-image: url(../assets/img/bg.jpg);
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -464,6 +464,9 @@
 
     .project-banner-spo {
         padding-left: unset;
+        justify-content: center;
+        padding-right: unset;
+        aspect-ratio: unset;
     }
 
     .project-banner-img-spo {
