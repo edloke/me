@@ -175,6 +175,16 @@
     object-fit: cover;
 }
 
+.background-layer {
+    background-image: url(../assets/img/bg.jpg);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
 
 /* Home Page (Mobile) - Initial (Intro) */
 
