@@ -13,7 +13,7 @@ gsap.to('.horizontal', {
     end: '+=3000px',
     pinSpacing: false,
     pin: '#horizontal-scoll',
-    scrub: true,
+    scrub: 0.5,
     invalidateOnRefresh: true
     
   }

@@ -614,6 +614,10 @@
     aspect-ratio: 1/1 !important;
 }
 
+.padding-top-override{
+    padding-top: 0px !important;
+}
+
 @media (min-width: 480px) {
     .feature-img-l {
         width: 100%;
@@ -651,6 +655,10 @@
         aspect-ratio: unset !important;
         height: 560px !important;
         max-width: 1080px !important;
+    }
+
+    .padding-top-override{
+        padding-top: 32px !important;
     }
 
 }
