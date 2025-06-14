@@ -104,12 +104,12 @@
     width: 180%;
 }
 
-.width-128 {
-    width: 128%;
+.width-100 {
+    width: 100% !important;
 }
 
-.width-100 {
-    width: 100%;
+.width-128 {
+    width: 128% !important;
 }
 
 .link-icon-swap {
@@ -433,75 +433,88 @@
 
 /* Project Page - Individual Banner - Customisation */
 
-.project-banner-spo {
-    justify-content: flex-start;
-    padding-right: unset;
-    padding-left: 8%;
-}
-
-.project-banner-img-spo {
-    width: 168%;
-    margin-top: 48%;
-}
-
-.project-banner-lhistoire {
+.lhistoire.project-banner {
     background: radial-gradient(145.29% 113.39% at 9.29% 9.19%, #5694A9 0%, #223B43 100%);
     justify-content: center;
     padding-right: unset;
     align-items: center;
 }
 
-.project-banner-img-lhistoire {
+.lhistoire.project-banner-img {
     width: 120%;
     margin-top: 32%;
 }
 
-.project-banner-img-bash {
+.spo.project-banner {
+    justify-content: flex-start;
+    padding-right: unset;
+    padding-left: 8%;
+}
+
+.spo.project-banner-img {
+    width: 168%;
+    margin-top: 48%;
+}
+
+.bash.project-banner-img {
     width: 220%;
     margin-top: -40%;
 }
 
+.aido-weddings.project-banner {
+    padding-right: 0% !important;
+}
+
+.aido-weddings.project-banner-img {
+    width: 88%;
+    margin-top: 8%;
+}
+
 
 @media (min-width: 480px) {
-    .project-banner-img-spo {
-        margin-top: 64%;
-    }
-
-    .project-banner-img-lhistoire {
+    .lhistoire.project-banner-img {
         width: 100%;
     }
 
-    .project-banner-img-bash {
+    .spo.project-banner-img {
+        margin-top: 64%;
+    }
+
+    .bash.project-banner-img {
         width: 160%;
         margin-top: -32%;
         margin-right: 16%;
     }
-
 }
 
 @media (min-width: 992px) {
-    .project-banner-img-lhistoire {
-        width: 56%;
-        margin-top: 16%;
-    }
-
-    .project-banner-spo {
+    .spo.project-banner {
         padding-left: unset;
         justify-content: center;
         padding-right: unset;
         aspect-ratio: unset;
     }
 
-    .project-banner-img-spo {
+    .lhistoire.project-banner-img {
+        width: 56%;
+        margin-top: 16%;
+    }
+
+    .spo.project-banner-img {
         align-items: center;
         width: 80%;
         margin-top: 32%;
     }
 
-    .project-banner-img-bash {
+    .bash.project-banner-img {
         width: 100%;
         margin-top: -20%;
         margin-right: 16%;
+    }
+
+    .aido-weddings.project-banner-img {
+        width: 52%;
+        margin-top: 3%;
     }
 }
 
@@ -578,7 +591,7 @@
     width: 100%;
 }
 
-@media (min-width: 448px) {
+@media (min-width: 400px) {
     .mockup-link-container {
         flex-direction: row;
         gap: 40px;
@@ -630,8 +643,14 @@
 
 .bash.feature-img-l {
     width: 128%;
-    margin-left:-16%;
+    margin-left: -16%;
     margin-bottom: 60%;
+}
+
+.aido-weddings.feature-img-l {
+    width: 148%;
+    margin-left: -32%;
+    margin-bottom: -30%;
 }
 
 .feature-card-banner {
@@ -647,6 +666,12 @@
     .spo.feature-img-l {
         width: 100%;
         margin-bottom: 16%;
+    }
+
+    .aido-weddings.feature-img-l {
+        width: 118%;
+        margin-left: -20%;
+        margin-bottom: -30%;
     }
 
     .feature-card-banner {
@@ -678,8 +703,14 @@
 
     .bash.feature-img-l {
         width: 100%;
-        margin-left:-10%;
+        margin-left: -10%;
         margin-bottom: 60%;
+    }
+
+    .aido-weddings.feature-img-l {
+        width: 100%;
+        margin-left: -16%;
+        margin-bottom: -30%;
     }
 
     .feature-card-banner {
@@ -737,12 +768,7 @@
 }
 
 
-/* Overrides */
-.feature-card-img-override-1 {
-    min-width: 40%;
-    max-width: 440px;
-    padding: 16px !important;
-}
+
 
 .feature-img-override-2 {
     width: 96%;
@@ -798,6 +824,8 @@
     height: 480px;
 }
 
+
+
 @media (min-width: 576px) {
     .feature-card-img-l {
         width: 476px;
@@ -839,6 +867,13 @@
     .feature-card-img-l {
         height: 540px;
         width: unset;
+    }
+
+    /* Overrides */
+    .img-width.feature-card-img {
+        min-width: 42%;
+        max-width: 42%;
+        padding: 16px !important;
     }
 
 }
