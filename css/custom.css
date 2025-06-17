@@ -470,6 +470,15 @@
     margin-top: 8%;
 }
 
+.hardscapes.project-banner {
+    padding-right: 0% !important;
+}
+
+.hardscapes.project-banner-img {
+    width: 120%;
+    margin-top: 0%;
+}
+
 
 @media (min-width: 480px) {
     .lhistoire.project-banner-img {
@@ -510,6 +519,10 @@
         width: 100%;
         margin-top: -20%;
         margin-right: 16%;
+    }
+
+    .hardscapes.project-banner-img {
+        width: 80%;
     }
 
     .aido-weddings.project-banner-img {
@@ -651,6 +664,11 @@
     width: 148%;
     margin-left: -32%;
     margin-bottom: -30%;
+}
+
+.hardscapes.feature-img-l {
+    width: 107%;
+    margin-top: 75%;
 }
 
 .feature-card-banner {
