@@ -144,10 +144,10 @@
 
 @media (min-width:1140px){
     .cormorant-xl {
-        font-size: 200px;
+        font-size: 160px;
         font-style: normal;
         font-weight: 400;
-        line-height: 200px; /* 100% */
+        line-height: 160px; /* 100% */
         letter-spacing: -4px;
     }
     .cormorant-l{
@@ -160,6 +160,24 @@
     .cormorant-m{
         font-size: 56px;
     }
+    .archivo-l{
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 68px; /* 121.429% */
+        letter-spacing: -1.12px;
+    }
+}
+
+@media (min-width:1440px){
+    .cormorant-xl {
+        font-size: 196px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 196px; /* 100% */
+        letter-spacing: -4px;
+    }
+
     .archivo-l{
         font-size: 56px;
         font-style: normal;
