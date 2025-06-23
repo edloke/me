@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		track.style.transform = `translateX(${translateX}px)`;
 
 		setTimeout(() => {
-			track.style.transition = "transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)";
+			track.style.transition = "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)";
 		}, 50);
 	});
 
