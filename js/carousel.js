@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				} else if (obj.classList.contains("triangle")) {
 					obj.style.transform = "translate(-50%, -50%) scale(0.5)";
 				} else {
-					obj.style.transform = "translateY(20px)";
+					obj.style.transform = "translateY(32px)";
 				}
 			});
 		});
@@ -137,6 +137,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	let touchStartX = 0;
 	let touchEndX = 0;
 
+  function handleSwipe() {
+		if (touchStartX - touchEndX > 50) {
+			goToCard(currentIndex + 1);
+		} else if (touchEndX - touchStartX > 50) {
+			goToCard(currentIndex - 1);
+		}
+	}
+
 	track.addEventListener("touchstart", (e) => {
 		touchStartX = e.changedTouches[0].screenX;
 	});
@@ -146,13 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		handleSwipe();
 	});
 
-	function handleSwipe() {
-		if (touchStartX - touchEndX > 50) {
-			goToCard(currentIndex + 1);
-		} else if (touchEndX - touchStartX > 50) {
-			goToCard(currentIndex - 1);
-		}
-	}
 
 	window.addEventListener("resize", () => {
 		const newCardWidth = cards[0].offsetWidth;
@@ -163,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		track.style.transform = `translateX(${translateX}px)`;
 
 		setTimeout(() => {
-			track.style.transition = "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)";
+			track.style.transition = "transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)";
 		}, 50);
 	});
 
