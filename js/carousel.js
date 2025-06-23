@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			// });
 			const waveSvg = card.querySelector(".wave-svg");
 			if (waveSvg) {
-				const moveX = (x - 0.5) * -20;
-				const moveY = (y - 0.5) * -20;
+				const moveX = (x - 0.5) * -32;
+				const moveY = (y - 0.5) * -32;
 				waveSvg.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.05)`;
 				const wavePaths = waveSvg.querySelectorAll("path:not(:first-child)");
 				wavePaths.forEach((path, index) => {
