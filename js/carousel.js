@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	track.addEventListener("touchend", (e) => {
-		touchEndX = e.changedTouches[0].screenY;
+		touchEndX = e.changedTouches[0].screenX;
 		handleSwipe();
     touchStartX = null;
 	});
