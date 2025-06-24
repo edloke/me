@@ -134,24 +134,25 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
-	let touchStartX = 0;
-	let touchEndX = 0;
+	let touchStartX = null;
+	let touchEndX = null;
 
   function handleSwipe() {
-		if (touchStartX - touchEndX > 50) {
+		if (touchStartX - touchEndX > 0) {
 			goToCard(currentIndex + 1);
-		} else if (touchEndX - touchStartX > 50) {
+		} else {
 			goToCard(currentIndex - 1);
 		}
 	}
 
 	track.addEventListener("touchstart", (e) => {
-		touchStartX = e.touches[0].screenX;
+		touchStartX = e.touches[0].clientX;
 	});
 
 	track.addEventListener("touchend", (e) => {
-		touchEndX = e.changedTouches[0].screenX;
+		touchEndX = e.changedTouches[0].clientX;
 		handleSwipe();
+    touchStartX = null;
 	});
 
 
