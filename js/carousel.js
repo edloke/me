@@ -138,9 +138,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	let touchEndX = null;
 
   function handleSwipe() {
-		if (touchStartX - touchEndX > 0) {
+		if (touchStartX - touchEndX > 32) {
 			goToCard(currentIndex + 1);
-		} else {
+		} else if (touchEndX - touchStartX > 32) {
 			goToCard(currentIndex - 1);
 		}
 	}
