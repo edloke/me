@@ -101,14 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 
-	function goToCard(index) {
-		index = Math.max(0, Math.min(index, cards.length - 1));
-
-		currentIndex = index;
-		updateCarousel();
-	}
-
-	function updateCarousel() {
+  function updateCarousel() {
 		const translateX = -currentIndex * totalCardWidth;
 
 		track.style.transform = `translateX(${translateX}px)`;
@@ -116,6 +109,13 @@ document.addEventListener("DOMContentLoaded", () => {
 		dots.forEach((dot, index) => {
 			dot.classList.toggle("active", index === currentIndex);
 		});
+	}
+
+	function goToCard(index) {
+		index = Math.max(0, Math.min(index, cards.length - 1));
+
+		currentIndex = index;
+		updateCarousel();
 	}
 
 	prevBtn.addEventListener("click", () => {
