@@ -19,13 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	var cardMargin = 64;
   var totalCardWidth = cardWidth + cardMargin;
 
-  //To allow real-time update of carousel when resizing window
-  $(window).resize(function() {
-    cardWidth = cards[0].offsetWidth;
-    totalCardWidth = cardWidth + cardMargin;
-    console.log("test")
-  });
-	
+
 
 	let currentIndex = 0;
 
@@ -146,11 +140,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	track.addEventListener("touchstart", (e) => {
-		touchStartX = e.touches[0].clientX;
+		touchStartX = e.touches[0].screenX;
 	});
 
 	track.addEventListener("touchend", (e) => {
-		touchEndX = e.changedTouches[0].clientX;
+		touchEndX = e.changedTouches[0].screenY;
 		handleSwipe();
     touchStartX = null;
 	});
@@ -172,3 +166,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	updateCarousel();
 });
 
+
+
+  //To allow real-time update of carousel when resizing window
+  // $(window).resize(function() {
+  //   cardWidth = cards[0].offsetWidth;
+  //   totalCardWidth = cardWidth + cardMargin;
+  //   console.log("test")
+  // });
+	
