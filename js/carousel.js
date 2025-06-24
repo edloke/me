@@ -19,7 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	var cardMargin = 64;
   var totalCardWidth = cardWidth + cardMargin;
 
-
+  //To allow real-time update of carousel when resizing window
+  $(window).resize(function() {
+    cardWidth = cards[0].offsetWidth;
+    totalCardWidth = cardWidth + cardMargin;
+    console.log("test")
+  });
+	
 
 	let currentIndex = 0;
 
@@ -128,26 +134,26 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
-	let touchStartX = null;
-	let touchEndX = null;
+	// let touchStartX = null;
+	// let touchEndX = null;
 
-  function handleSwipe() {
-		if (touchStartX - touchEndX > 32) {
-			goToCard(currentIndex + 1);
-		} else if (touchEndX - touchStartX > 32) {
-			goToCard(currentIndex - 1);
-		}
-	}
+  // function handleSwipe() {
+	// 	if (touchStartX - touchEndX > 32) {
+	// 		goToCard(currentIndex + 1);
+	// 	} else if (touchEndX - touchStartX > 32) {
+	// 		goToCard(currentIndex - 1);
+	// 	}
+	// }
 
-	track.addEventListener("touchstart", (e) => {
-		touchStartX = e.touches[0].screenX;
-	});
+	// track.addEventListener("touchstart", (e) => {
+	// 	touchStartX = e.touches[0].clientX;
+	// });
 
-	track.addEventListener("touchend", (e) => {
-		touchEndX = e.changedTouches[0].screenX;
-		handleSwipe();
-    touchStartX = null;
-	});
+	// track.addEventListener("touchend", (e) => {
+	// 	touchEndX = e.changedTouches[0].clientX;
+	// 	handleSwipe();
+  //   touchStartX = null;
+	// });
 
 
 	window.addEventListener("resize", () => {
@@ -166,12 +172,3 @@ document.addEventListener("DOMContentLoaded", () => {
 	updateCarousel();
 });
 
-
-
-  //To allow real-time update of carousel when resizing window
-  // $(window).resize(function() {
-  //   cardWidth = cards[0].offsetWidth;
-  //   totalCardWidth = cardWidth + cardMargin;
-  //   console.log("test")
-  // });
-	
