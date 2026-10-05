@@ -1,5 +1,9 @@
 /* Global - Navigation Bar - Customisation */
 
+body {
+    background-color: #ffffff;
+}
+
 .navbar-custom {
     display: flex;
     padding: 8px !important;
